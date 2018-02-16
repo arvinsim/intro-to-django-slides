@@ -1,100 +1,244 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+    <title>Introduction to Django</title>
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/moon.css">
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>
-                    <h1>Introduction to Django</h1>
-                </section>
-				<section>
-                    <h2>What is Django?</h2>
-                </section>
-                <section>
-                    <h2>What is Django?</h2>
-                    <section>
-                        <ul>
-                            <li>A Free High Level Python Web Framework</li>
-                            <li>Encourages rapid development and clean, pragmatic design</li>
-                            <li>Focus on automation and DRY</li>
-                            <li>Widely Supported, many deployment options</li>
-                        </ul>
-                </section>
-                <section>
-                    <h2>What are Django's features?</h2>
-                </section>
-                <section>
-                    <h2>What are Django's features?</h2>
-                    <section>
-                        <ul>
-                            <li>ORM</li>
-                            <li>Automatic Admin Interface</li>
-                            <li>Regex-based URL Design</li>
-                            <li>Templating system</li>
-                            <li>Command Line Job Framework</li>
-                        </ul>
-                    </section>
-                </section>
-                <section>
-                    <h2>Which sites use Django?</h2>
-                </section>
-                <section>
-                    <h2>Which sites use Django?</h2>
-                    <section>
-                        <ul>
-                            <li>Disqus</li>
-                            <li>Bitbucket</li>
-                            <li>Instagram</li>
-                            <li>Mozilla Firefox</li>
-                            <li>Pinterest</li>
-                            <li>NASA</li>
-                            <li>The Onion</li>
-                            <li>The Washington Post</li>
-                            <li>EventBrite</li>
-                        </ul>
-                    </section>
-                </section>
-                <section>
-                    <h2>Where to get help</h2>
-                </section>
-			</div>
-		</div>
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.type = 'text/css'
+      link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css'
+      document.getElementsByTagName('head')[0].appendChild(link)
+    </script>
+</head>
+<body>
+<div class="reveal">
+    <div class="slides">
+        <section>
+            <h1>Introduction to Django</h1>
+        </section>
+        <section>
+            <h2>What is Django?</h2>
+        </section>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+        <section>
+            <h2>What is Django?</h2>
+            <section>
+                <img src="assets/images/django-unchained.jpg" class="plain" alt="Django Unchained">
+            </section>
+            <section>
+                <img src="assets/images/django.jpg" class="plain" alt="Django">
+            </section>
+            <section>
+                <img src="assets/images/django-pony-green.jpg" class="plain" alt="Django Green">
+            </section>
+            <section>
+                <img src="assets/images/django-pony-pink.jpg" class="plain" alt="Django Pink">
+            </section>
+            <section>
+                <blockquote>...he talked about how Django needed a mascot. One that was awesome and had magical
+                    powers...
+                </blockquote>
+                <blockquote>...Since the pony seems to have much historical significance within the Django project, I
+                    give you the logo for “the web framework for ponies with magical powers." Django is now awesome!
+                </blockquote>
+                <a href="Bryan Veloso's post about the pony mascot image.">-- Bryan Veloso's post about the pony mascot
+                    image.</a>
+            </section>
+            <section>
+                <img src="assets/images/so-awesome.gif" class="plain" alt="So Awesome!" />
+            </section>
+        </section>
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
-	</body>
+        <section>
+            <h2>What is Django? TL;DR Version</h2>
+            <section>
+                Django is a free and open source web application framework, written in Python, which follows the
+                Model-View-Controller(MVC)/Model-View-Template(MVT) architectural pattern.
+            </section>
+            <section>
+                <img src="assets/images/holovaty.jpg" class="plain" alt="Adrian Holovaty"/>
+                <img src="assets/images/moss.jpg" class="plain" alt="Jacob Kaplan-Moss"/>
+                <ul>
+                    <li>Developed by Adrian Holovaty & Jacob Kaplan-Moss</li>
+                    <li>Created in 2003</li>
+                    <li>Open Sourced in 2005</li>
+                </ul>
+            </section>
+            <section>It is named after Adrian's favorite guitarist, Django Reinhardt, the "Three fingered lightning"
+            </section>
+        </section>
+
+        <section>
+            <h2>What is Django?</h2>
+            <section>
+                A Python Web Framework
+            </section>
+            <section>
+                <p>Web frameworks aim to automate the overhead associated with common activities performed in web
+                    development.</p>
+                <p>Examples of common activities are:</p>
+                <ul>
+                    <li>Database Access</li>
+                    <li>Templating</li>
+                    <li>Session Management</li>
+                    <li>Authentication and Authorization systems</li>
+                </ul>
+            </section>
+            <section>
+                <p>Counterparts in other languages</p>
+                <ul>
+                    <li>Laravel(PHP)</li>
+                    <li>Ruby on Rails(Ruby)</li>
+                    <li>Play Framework(Java)</li>
+                    <li>Express(Javascript/NodeJS)</li>
+                </ul>
+            </section>
+        </section>
+
+        <section>
+            <h2>What is Django?</h2>
+            <section>
+                Free and Open Source
+            </section>
+            <section>
+                Alternatives
+                <ul>
+                    <li>Laravel(PHP)</li>
+                    <li>Ruby on Rails(Ruby)</li>
+                    <li>Play Framework(Java)</li>
+                    <li>Express(Javascript/NodeJS)</li>
+                </ul>
+            </section>
+
+        </section>
+
+        <section>
+            <h2>What is Django?</h2>
+            <section>
+                A High Level Python Web Framework
+            </section>
+            <section>
+                Alternatives
+                <ul>
+                    <li>Laravel(PHP)</li>
+                    <li>Ruby on Rails(Ruby)</li>
+                    <li>Play Framework(Java)</li>
+                    <li>Express(Javascript/NodeJS)</li>
+                </ul>
+            </section>
+        </section>
+        <section>
+            <h2>What is Django?</h2>
+            <section>
+                Encourages rapid development and clean, pragmatic design.
+            </section>
+        </section>
+        <section>
+            <h2>What is Django?</h2>
+            <section>
+                <ul>
+                    <li>Focus on automation and DRY</li>
+                </ul>
+            </section>
+        </section>
+        <section>
+            <h2>What is Django?</h2>
+            <section>
+                <ul>
+                    <li>Widely Supported, many deployment options</li>
+                </ul>
+            </section>
+        </section>
+        <section>
+            <h2>What is Django?</h2>
+            <section>
+                <ul>
+                    <li>A <em>Free</em> High Level Python Web Framework</li>
+                    <li>Encourages rapid development and clean, pragmatic design</li>
+                    <li>Focus on automation and DRY</li>
+                    <li>Widely Supported, many deployment options</li>
+                </ul>
+            </section>
+        </section>
+
+        <section>
+            <h2>What is Django?</h2>
+            <section>
+                <ul>
+                    <li>A <em>Free</em> High Level Python Web Framework</li>
+                    <li>Encourages rapid development and clean, pragmatic design</li>
+                    <li>Focus on automation and DRY</li>
+                    <li>Widely Supported, many deployment options</li>
+                </ul>
+            </section>
+        </section>
+
+        <section>
+            <h2>What are Django's features?</h2>
+        </section>
+        <section>
+            <h2>What are Django's features?</h2>
+            <section>
+                <ul>
+                    <li>ORM</li>
+                    <li>Automatic Admin Interface</li>
+                    <li>Regex-based URL Design</li>
+                    <li>Templating system</li>
+                    <li>Command Line Job Framework</li>
+                </ul>
+            </section>
+        </section>
+        <section>
+            <h2>Which sites use Django?</h2>
+        </section>
+        <section>
+            <h2>Which sites use Django?</h2>
+            <section>
+                <ul>
+                    <li>Disqus</li>
+                    <li>Bitbucket</li>
+                    <li>Instagram</li>
+                    <li>Mozilla Firefox</li>
+                    <li>Pinterest</li>
+                    <li>NASA</li>
+                    <li>The Onion</li>
+                    <li>The Washington Post</li>
+                    <li>EventBrite</li>
+                </ul>
+            </section>
+        </section>
+        <section>
+            <h2>Where to get help</h2>
+        </section>
+    </div>
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+  // More info about config & dependencies:
+  // - https://github.com/hakimel/reveal.js#configuration
+  // - https://github.com/hakimel/reveal.js#dependencies
+  Reveal.initialize({
+    dependencies: [
+      {src: 'plugin/markdown/marked.js'},
+      {src: 'plugin/markdown/markdown.js'},
+      {src: 'plugin/notes/notes.js', async: true},
+      {src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad() }}
+    ]
+  })
+</script>
+</body>
 </html>
