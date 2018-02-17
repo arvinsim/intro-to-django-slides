@@ -1,1 +1,1 @@
-# Introduction to Django Slides
+# Short Introduction to Django Slides
